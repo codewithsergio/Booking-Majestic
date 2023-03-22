@@ -1,0 +1,42 @@
+.happy_clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-gray);
+  padding: 3rem;
+}
+
+.happy_clients > h2 {
+  color: var(--brown);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.happy_clients > h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+.happy_clients > .curl {
+  width: 125px;
+}
+
+.trusted_icons {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: 150px;
+  grid-column-gap: 50px;
+}
+
+.trusted_icons > img {
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 870px) {
+  .trusted_icons {
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-gap: 7px;
+  }
+}

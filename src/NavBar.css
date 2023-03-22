@@ -1,0 +1,247 @@
+.nav_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: var(--gray-accent);
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 0;
+  z-index: 10;
+}
+
+.nav_bar > div {
+  display: flex;
+}
+
+.nav_bar img {
+  width: 15rem;
+}
+
+#logo {
+  margin-right: 5rem;
+}
+
+.logo_w_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.logo_call {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.nav_call {
+  color: var(--yellow-accent);
+}
+
+.nav_bar button {
+  color: var(--yellow-accent);
+  border: 2px solid var(--yellow-accent);
+  border-radius: 2rem;
+  background-color: var(--gray-accent);
+  transition: background-color 0.4s;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  height: max-content;
+  font-size: 1.2rem;
+  font-weight: 500;
+  float: right;
+}
+
+#ham_nav input {
+  position: absolute;
+  opacity: 0;
+}
+
+.nav_bar button:hover {
+  background-color: var(--ugly-brown);
+  border-color: var(--ugly-brown);
+  color: white;
+  cursor: pointer;
+}
+
+.logo_call {
+  display: flex;
+  width: 100%;
+}
+
+li {
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 300;
+}
+
+.links {
+  margin-top: 1rem;
+}
+
+#contact_ham {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#contact_button {
+  position: relative;
+  bottom: 25px;
+  margin-left: 2.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s;
+}
+
+a:hover {
+  color: var(--ugly-brown);
+}
+
+a.active {
+  background-color: transparent;
+  color: var(--ugly-brown);
+}
+
+@media screen and (max-width: 870px) {
+  .logo_call {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo_w_links {
+    margin: 0;
+  }
+  #logo {
+    margin: 0;
+  }
+  .nav_bar {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .links {
+    visibility: hidden;
+    display: none;
+  } */
+  .nav_bar > button {
+    margin-top: 1rem;
+  }
+
+  /* Hamburger Button */
+  .logo_w_links {
+    display: block;
+    position: relative;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .logo_w_links input {
+    display: block;
+    width: 37px;
+    height: 32px;
+    position: absolute;
+    top: 90px;
+
+    cursor: pointer;
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+  }
+
+  .logo_w_links span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background-color 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .logo_w_links span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .logo_w_links span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* Hamburger button animation */
+  .logo_w_links input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  .logo_w_links input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+
+  .logo_w_links input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #main-nav {
+    position: fixed;
+    width: 300px;
+    height: 200vh;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 10rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--gray-accent);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    top: 0px;
+    left: -300px;
+
+    transition: left 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #main-nav li {
+    margin-bottom: 1rem;
+    border-bottom: solid 4px rgb(255, 213, 4, 0.5);
+  }
+
+  .logo_w_links input:checked ~ #main-nav {
+    top: 0px;
+    left: 0px;
+  }
+  #contact_ham button {
+    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+    width: max-content;
+  }
+  #contact_ham {
+    display: grid;
+    grid-template-columns: 50px 50% 50px;
+    grid-gap: 30px;
+    width: 100%;
+    margin-top: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  #contact_button {
+    position: static;
+  }
+}

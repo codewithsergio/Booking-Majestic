@@ -1,0 +1,8 @@
+.footer > p {
+  padding-top: 2rem;
+  height: 10rem;
+  background-color: var(--gray-accent);
+  color: gray;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}

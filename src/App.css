@@ -1,0 +1,18 @@
+:root {
+  --yellow-accent: #ffd504;
+  --gray-accent: #2d2d2d;
+  --ugly-brown: #a1865d;
+  --faded-yellow: #e6d25e;
+  --brown: #a1865d;
+  --light-gray: #e8e8e8;
+}
+
+body {
+  margin-top: 7rem;
+}
+
+@media screen and (max-width: 870px) {
+  body {
+    margin-top: 10.6rem;
+  }
+}

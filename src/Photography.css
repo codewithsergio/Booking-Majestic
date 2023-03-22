@@ -1,0 +1,98 @@
+.photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photography h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.photography p {
+  margin-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  width: 900px;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01rem;
+}
+
+.photography button {
+  background-color: var(--yellow-accent);
+  color: white;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  transition: background-color 0.4s;
+}
+
+.photography button:hover {
+  background-color: var(--faded-yellow);
+  cursor: pointer;
+}
+
+.grid3by3 {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 900px;
+}
+
+.grid3by3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photography > img {
+  width: 150px;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 730px) {
+  .grid3by3 {
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 350px;
+  }
+  .photography > img {
+    width: 125px;
+    margin-top: 1rem;
+  }
+  .photography p {
+    width: 80%;
+    font-size: medium;
+  }
+
+  .photography img:last-child {
+    display: none;
+  }
+}
+
+@media screen and (730px < width < 930px) {
+  .grid3by3 {
+    gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 600px;
+  }
+  .photography > img {
+    width: 125px;
+    margin-top: 1rem;
+  }
+
+  .photography p {
+    width: 80%;
+    font-size: medium;
+  }
+
+  .photography img:last-child {
+    display: none;
+  }
+}

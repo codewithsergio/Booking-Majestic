@@ -1,0 +1,64 @@
+.professional_services {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.professional_services > h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--yellow-accent);
+}
+
+.professional_services {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.professional_services > img {
+  width: 150px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.professional_services > button {
+  background-color: var(--yellow-accent);
+  color: white;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  padding: 1.25rem 1.75rem 1.25rem 1.75rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  transition: background-color 0.4s;
+}
+
+.professional_services > button:hover {
+  background-color: var(--faded-yellow);
+  cursor: pointer;
+}
+
+.professional_details {
+  width: 830px;
+  font-weight: 300;
+}
+
+.professional_details > p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.professional_details span {
+  color: var(--yellow-accent);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 870px) {
+  .professional_services > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .professional_details {
+    width: 90%;
+  }
+}
