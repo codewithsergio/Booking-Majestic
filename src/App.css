@@ -8,11 +8,11 @@
 }
 
 body {
-  margin-top: 7rem;
+  margin-top: 6.7rem;
 }
 
 @media screen and (max-width: 870px) {
   body {
-    margin-top: 10.6rem;
+    margin-top: 10.2rem;
   }
 }

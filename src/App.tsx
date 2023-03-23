@@ -17,6 +17,7 @@ import Footer from "./Footer";
 import Photography from "./Photography";
 import Contact from "./Contact";
 import RootLayout from "./RootLayout";
+import Cinematography from "./Cinematography";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,7 +36,16 @@ const router = createBrowserRouter(
         element={
           <>
             <Photography />
-            <Contact />
+            <Contact service="Photography" />
+          </>
+        }
+      />
+      <Route
+        path="cinematography"
+        element={
+          <>
+            <Cinematography />
+            <Contact service="Cinematography" />
           </>
         }
       />

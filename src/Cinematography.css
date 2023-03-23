@@ -1,0 +1,88 @@
+.cinematography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cinematography > img {
+  width: 150px;
+  margin-top: 3rem;
+}
+
+.cinematography .imgGroup {
+  width: 900px;
+  text-align: center;
+}
+
+.cinematography .imgGroup h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.cinematography .imgGroup a > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.cinematography a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.cinematography a img {
+  display: block;
+  width: 900px; /* Adjust as needed */
+  transition: transform 0.5s ease;
+  box-shadow: 0px 15px 30px 5px rgba(50, 50, 50, 0.8);
+}
+
+.cinematography a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  border-radius: 1rem;
+}
+
+.cinematography a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 1rem;
+}
+
+.cinematography button {
+  background-color: var(--yellow-accent);
+  color: white;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  transition: background-color 0.4s;
+}
+
+.cinematography button:hover {
+  background-color: var(--faded-yellow);
+  cursor: pointer;
+}

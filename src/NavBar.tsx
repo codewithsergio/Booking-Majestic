@@ -25,7 +25,7 @@ function NavBar() {
                 <NavLink to="photography">PHOTOGRAPHY</NavLink>
               </li>
               <li>
-                <a href="news.asp">CINEMATOGRAPHY</a>
+                <NavLink to="cinematography">CINEMATOGRAPHY</NavLink>
               </li>
               <li>
                 <a href="contact.asp">PHOTO BOOTH</a>
