@@ -3,6 +3,7 @@ import fancy_curl from "./assets/fancy_curl.webp";
 import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import HorizontalLine from "./reusable/HorizontalLine";
 
 interface AppProps {
   service: string;
@@ -65,7 +66,7 @@ function Contact({ service }: AppProps) {
 
   return (
     <div className="contact">
-      <div className="line"></div>
+      <HorizontalLine />
       <img src={fancy_curl} />
       <h2>CONTACT US</h2>
       <form ref={form} onSubmit={sendEmail}>

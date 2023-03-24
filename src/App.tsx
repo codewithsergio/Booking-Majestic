@@ -18,6 +18,7 @@ import Photography from "./Photography";
 import Contact from "./Contact";
 import RootLayout from "./RootLayout";
 import Cinematography from "./Cinematography";
+import Photobooth from "./Photobooth";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -49,6 +50,15 @@ const router = createBrowserRouter(
           </>
         }
       />
+      <Route
+        path="photobooth"
+        element={
+          <>
+            <Photobooth />
+            <Contact service="photobooth" />
+          </>
+        }
+      />
     </Route>
   )
 );
@@ -56,10 +66,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="App">
-      {/* Add sticky navbar */}
       {/* Logo animation */}
-      {/* <Carousal />
-      <Services /> */}
 
       <RouterProvider router={router} />
       {/* Add these links: Facebook, insta, twitter, youtube */}
