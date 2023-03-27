@@ -1,8 +1,14 @@
 import MajesticLogo from "./assets/MajesticLogo.png";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 function NavBar() {
+  const [isChecked, setIsChecked] = useState(false);
+
+  function handleNavLinkClick() {
+    setIsChecked(false);
+  }
   return (
     <div className="nav_bar">
       <div className="logo_w_links">
@@ -16,22 +22,34 @@ function NavBar() {
           <a></a>
           <button id="contact_button">CONTACT US</button>
           <div id="ham_nav">
-            <input type="checkbox" />
+            <input
+              type="checkbox"
+              checked={isChecked}
+              onChange={() => setIsChecked(!isChecked)}
+            />
             <span></span>
             <span></span>
             <span></span>
             <ul className="links" id="main-nav">
               <li>
-                <NavLink to="photography">PHOTOGRAPHY</NavLink>
+                <NavLink to="photography" onClick={handleNavLinkClick}>
+                  PHOTOGRAPHY
+                </NavLink>
               </li>
               <li>
-                <NavLink to="cinematography">CINEMATOGRAPHY</NavLink>
+                <NavLink to="cinematography" onClick={handleNavLinkClick}>
+                  CINEMATOGRAPHY
+                </NavLink>
               </li>
               <li>
-                <NavLink to="photobooth">PHOTO BOOTH</NavLink>
+                <NavLink to="photobooth" onClick={handleNavLinkClick}>
+                  PHOTO BOOTH
+                </NavLink>
               </li>
               <li>
-                <NavLink to="dj">DJ & MC</NavLink>
+                <NavLink to="dj" onClick={handleNavLinkClick}>
+                  DJ & MC
+                </NavLink>
               </li>
             </ul>
           </div>

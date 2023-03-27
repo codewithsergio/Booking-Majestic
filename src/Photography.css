@@ -60,7 +60,7 @@
   .grid3by3 {
     gap: 5px;
     grid-template-columns: repeat(2, 1fr);
-    width: 350px;
+    width: 90%;
   }
   .photography > img {
     width: 125px;

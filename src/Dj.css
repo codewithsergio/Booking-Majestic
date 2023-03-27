@@ -96,3 +96,23 @@
   background-color: var(--faded-yellow);
   cursor: pointer;
 }
+
+@media screen and (max-width: 870px) {
+  .dj h1 {
+    font-size: 1.4rem;
+  }
+  .dj .imgGroup {
+    width: 90%;
+  }
+  .dj p {
+    width: 80%;
+    font-size: medium;
+  }
+}
+
+@media screen and (730px < width < 930px) {
+  .dj p {
+    width: 80%;
+    font-size: medium;
+  }
+}

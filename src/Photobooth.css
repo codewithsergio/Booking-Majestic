@@ -105,3 +105,19 @@
   background-color: var(--faded-yellow);
   cursor: pointer;
 }
+
+@media screen and (max-width: 870px) {
+  .photobooth h1 {
+    font-size: 1.4rem;
+  }
+  .photobooth .imgGroup {
+    width: 90%;
+  }
+  .photobooth .imgGroup .grid3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .photobooth .photobooth-options > div {
+    display: flex;
+    flex-direction: column;
+  }
+}

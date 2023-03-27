@@ -4,3 +4,9 @@
   background-color: var(--light-gray);
   margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 870px) {
+  #line {
+    width: 90%;
+  }
+}

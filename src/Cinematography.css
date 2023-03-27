@@ -87,3 +87,12 @@
   background-color: var(--faded-yellow);
   cursor: pointer;
 }
+
+@media screen and (max-width: 870px) {
+  .cinematography h1 {
+    font-size: 1.4rem;
+  }
+  .cinematography .imgGroup {
+    width: 90%;
+  }
+}

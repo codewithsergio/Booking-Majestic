@@ -65,3 +65,12 @@ form button:hover {
   background-color: var(--faded-yellow);
   cursor: pointer;
 }
+
+@media screen and (max-width: 870px) {
+  form {
+    width: 90%;
+  }
+  form button {
+    margin-bottom: 1rem;
+  }
+}
