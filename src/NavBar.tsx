@@ -31,7 +31,7 @@ function NavBar() {
                 <NavLink to="photobooth">PHOTO BOOTH</NavLink>
               </li>
               <li>
-                <a href="about.asp">DJ & MC</a>
+                <NavLink to="dj">DJ & MC</NavLink>
               </li>
             </ul>
           </div>

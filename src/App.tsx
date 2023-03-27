@@ -19,6 +19,7 @@ import Contact from "./Contact";
 import RootLayout from "./RootLayout";
 import Cinematography from "./Cinematography";
 import Photobooth from "./Photobooth";
+import Dj from "./Dj";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -59,6 +60,15 @@ const router = createBrowserRouter(
           </>
         }
       />
+      <Route
+        path="dj"
+        element={
+          <>
+            <Dj />
+            <Contact service="Dj" />
+          </>
+        }
+      />
     </Route>
   )
 );
@@ -70,6 +80,7 @@ function App() {
 
       <RouterProvider router={router} />
       {/* Add these links: Facebook, insta, twitter, youtube */}
+      {/* General Contact page, and link all get started buttons */}
     </div>
   );
 }

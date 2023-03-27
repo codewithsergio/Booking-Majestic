@@ -1,44 +1,43 @@
-.cinematography {
+.dj {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.cinematography > img {
+.dj > img {
   width: 150px;
   margin-top: 3rem;
 }
 
-.cinematography .imgGroup {
-  width: 900px;
-  text-align: center;
-}
-
-.cinematography .imgGroup h1 {
+.dj > h1 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
-.cinematography .imgGroup a > img {
-  width: 100%;
-  border-radius: 1rem;
+.dj .imgGroup {
+  width: 900px;
 }
 
-.cinematography a {
+.dj .imgGroup img {
+  width: 100%;
+}
+
+.dj a {
   position: relative;
   display: inline-block;
   margin-bottom: 2rem;
 }
 
-.cinematography a img {
+.dj a img {
   display: block;
   width: 900px; /* Adjust as needed */
   transition: transform 0.5s ease;
   box-shadow: 0px 15px 30px 5px rgba(50, 50, 50, 0.8);
+  border-radius: 1rem;
 }
 
-.cinematography a:hover::before {
+.dj a:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -52,9 +51,10 @@
   opacity: 1;
   transition: opacity 0.5s ease;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
-.cinematography a::before {
+.dj a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -70,20 +70,29 @@
   border-radius: 1rem;
 }
 
-.cinematography button {
+.dj p {
+  margin-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  width: 900px;
+  font-size: 1.1rem;
+  letter-spacing: -0.01rem;
+}
+
+.dj button {
   background-color: var(--yellow-accent);
   color: white;
   border: none;
   font-weight: 700;
   letter-spacing: 0.2rem;
   font-size: 0.9rem;
-  padding: 0.75rem 1rem 0.75rem 1rem;
-  margin-top: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 3rem;
   margin-bottom: 3rem;
   transition: background-color 0.4s;
 }
 
-.cinematography button:hover {
+.dj button:hover {
   background-color: var(--faded-yellow);
   cursor: pointer;
 }
