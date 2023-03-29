@@ -41,7 +41,7 @@
   color: var(--yellow-accent);
 }
 
-.nav_bar button {
+.nav_bar #contact_button {
   color: var(--yellow-accent);
   border: 2px solid var(--yellow-accent);
   border-radius: 2rem;
@@ -59,7 +59,7 @@
   opacity: 0;
 }
 
-.nav_bar button:hover {
+.nav_bar #contact_button:hover {
   background-color: var(--ugly-brown);
   border-color: var(--ugly-brown);
   color: white;
@@ -127,7 +127,7 @@ a.active {
     visibility: hidden;
     display: none;
   } */
-  .nav_bar > button {
+  .nav_bar > #contact_button {
     margin-top: 1rem;
   }
 
@@ -229,7 +229,7 @@ a.active {
     top: 0px;
     left: 0px;
   }
-  #contact_ham button {
+  #contact_ham #contact_button {
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;
     width: max-content;
   }

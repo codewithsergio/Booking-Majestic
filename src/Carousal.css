@@ -60,9 +60,10 @@
   font-size: 2rem;
   font-style: italic;
   font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1.5rem;
 }
 
-.image_mid_text > button {
+.image_mid_text > .linkButton {
   background-color: var(--yellow-accent);
   border: none;
   border-radius: 0.5rem;
@@ -75,7 +76,7 @@
   transition: background-color 0.4s;
 }
 
-.image_mid_text > button:hover {
+.image_mid_text > .linkButton:hover {
   background-color: #8e3aab;
   cursor: pointer;
 }

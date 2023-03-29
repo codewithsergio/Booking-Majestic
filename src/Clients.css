@@ -29,6 +29,16 @@
   grid-column-gap: 50px;
 }
 
+.trusted_icons img {
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.trusted_icons img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
 .trusted_icons > img {
   width: 100%;
   margin: auto;

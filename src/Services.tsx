@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import fancy_curl from "./assets/fancy_curl.webp";
 import "./Services.css";
 
@@ -26,7 +27,9 @@ function Services() {
         </p>
         <p>Your satisfaction is important to us book your event today!</p>
       </div>
-      <button>LET'S GET STARTED</button>
+      <NavLink id="lets_start" to="contact">
+        LET'S GET STARTED
+      </NavLink>
     </div>
   );
 }

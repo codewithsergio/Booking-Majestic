@@ -4,6 +4,7 @@ import dj1 from "./assets/dj1.webp";
 import photobooth1 from "./assets/photobooth1.webp";
 import party1 from "./assets/party1.webp";
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function Carousal() {
   let slideIndex: number = 1;
@@ -57,7 +58,9 @@ function Carousal() {
         <div className="image_mid_text">
           <h1>PHOTOGRAPHY</h1>
           <p>Looking to capture those special moments?</p>
-          <button>GET STARTED</button>
+          <NavLink className="linkButton" to="contact">
+            GET STARTED
+          </NavLink>
         </div>
       </div>
 
@@ -66,7 +69,9 @@ function Carousal() {
         <div className="image_mid_text">
           <h1>DJ & KARAOKE</h1>
           <p>Looking to liven your event?</p>
-          <button>GET STARTED</button>
+          <NavLink className="linkButton" to="contact">
+            GET STARTED
+          </NavLink>
         </div>
       </div>
 
@@ -75,7 +80,9 @@ function Carousal() {
         <div className="image_mid_text">
           <h1>PHOTO BOOTH</h1>
           <p>Looking to capture memories of your event?</p>
-          <button>GET STARTED</button>
+          <NavLink className="linkButton" to="contact">
+            GET STARTED
+          </NavLink>
         </div>
       </div>
 
@@ -84,7 +91,9 @@ function Carousal() {
         <div className="image_mid_text">
           <h1>CINEMATOGRAPHY</h1>
           <p>Looking to film your story?</p>
-          <button>GET STARTED</button>
+          <NavLink className="linkButton" to="contact">
+            GET STARTED
+          </NavLink>
         </div>
       </div>
 

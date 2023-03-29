@@ -20,7 +20,9 @@ function NavBar() {
         </div>
         <div id="contact_ham">
           <a></a>
-          <button id="contact_button">CONTACT US</button>
+          <NavLink id="contact_button" to="contact">
+            CONTACT US
+          </NavLink>
           <div id="ham_nav">
             <input
               type="checkbox"
