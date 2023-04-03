@@ -15,7 +15,7 @@ function Carousal() {
   };
 
   const currentSlide = (n: number) => {
-    showSlides((slideIndex = n));
+    // showSlides((slideIndex = n));
   };
 
   const showSlides = (n: number) => {
@@ -41,14 +41,14 @@ function Carousal() {
     (slides[slideIndex - 1] as HTMLElement).style.display = "block";
     (dots[slideIndex - 1] as HTMLElement).className += " active";
 
-    clearInterval(slideInterval);
-    slideInterval = setInterval(() => {
-      plusSlides(1);
-    }, 10000);
+    // clearInterval(slideInterval);
+    // slideInterval = setInterval(() => {
+    //   plusSlides(1);
+    // }, 10000);
   };
 
   useEffect(() => {
-    showSlides(1);
+    // showSlides(1);
   }, []);
 
   return (

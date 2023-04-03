@@ -38,15 +38,15 @@
 }
 
 .nav_call {
-  color: var(--yellow-accent);
+  color: var(--ugly-brown);
 }
 
 .nav_bar #contact_button {
-  color: var(--yellow-accent);
-  border: 2px solid var(--yellow-accent);
+  color: var(--gray-accent);
+  border: 2px solid var(--gray-accent);
   border-radius: 2rem;
-  background-color: var(--gray-accent);
-  transition: background-color 0.4s;
+  background-color: var(--yellow-accent);
+  transition: all ease-in-out 0.4s;
   padding: 0.75rem 2rem 0.75rem 2rem;
   height: max-content;
   font-size: 1rem;
@@ -60,8 +60,8 @@
 }
 
 .nav_bar #contact_button:hover {
-  background-color: var(--ugly-brown);
-  border-color: var(--ugly-brown);
+  background-color: var(--gray-accent);
+  border-color: var(--yellow-accent);
   color: white;
   cursor: pointer;
 }
@@ -96,7 +96,7 @@ li {
 a {
   text-decoration: none;
   color: white;
-  transition: color 0.4s;
+  transition: all 1s;
 }
 
 a:hover {
@@ -105,7 +105,11 @@ a:hover {
 
 a.active {
   background-color: transparent;
-  color: var(--ugly-brown);
+  color: var(--yellow-accent);
+  background-color: rgba(200, 200, 200, 0.1);
+  padding: 0.5rem;
+  padding-bottom: 0.8rem;
+  border-radius: 0.3rem;
 }
 
 @media screen and (max-width: 870px) {
@@ -232,6 +236,7 @@ a.active {
   #contact_ham #contact_button {
     padding: 0.75rem 0.75rem 0.75rem 0.75rem;
     width: max-content;
+    margin: 0;
   }
   #contact_ham {
     display: grid;

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Dj.css";
 import fancy_curl from "./assets/fancy_curl.webp";
 import djzerj1 from "./assets/images/djzerj1.png";
@@ -36,7 +37,9 @@ function Dj() {
         you. Basic packages start at $350 schedule a free no-pressure
         consultation click here to contact us today!
       </p>
-      <button>BOOK A DJ</button>
+      <NavLink id="lets_start" to="../contact">
+        BOOK A DJ
+      </NavLink>
     </div>
   );
 }

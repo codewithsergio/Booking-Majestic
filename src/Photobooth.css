@@ -58,7 +58,7 @@
   position: relative;
   bottom: 20px;
   background-color: var(--yellow-accent);
-  color: white;
+  color: var(--gray-accent);
   font-weight: 700;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
@@ -88,9 +88,9 @@
   padding: 0.5rem;
 }
 
-.photobooth button {
+.photobooth #lets_start {
   background-color: var(--yellow-accent);
-  color: white;
+  color: var(--gray-accent);
   border: none;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -101,8 +101,9 @@
   transition: background-color 0.4s;
 }
 
-.photobooth button:hover {
-  background-color: var(--faded-yellow);
+.photobooth #lets_start:hover {
+  background-color: var(--gray-accent);
+  color: white;
   cursor: pointer;
 }
 

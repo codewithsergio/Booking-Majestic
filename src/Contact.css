@@ -42,27 +42,26 @@ form textarea {
   color: lightgray;
 }
 
-form button {
+.contact form button {
   position: relative;
   bottom: 50px;
   background-color: var(--yellow-accent);
-  color: white;
+  color: var(--gray-accent);
   border: none;
   font-weight: 700;
-  letter-spacing: rem;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
   font-size: 1.2rem;
-  font-weight: 400;
-  padding: 1.25rem 7rem 1.25rem 4rem;
+  font-weight: 500;
+  padding: 1.25rem 7rem 1.25rem 2.5rem;
   margin-top: 1rem;
   margin-bottom: 5rem;
   transition: background-color 0.4s;
+  border: 1px solid var(--yellow-accent);
   width: 100px;
 }
 
-form button:hover {
-  background-color: var(--faded-yellow);
+.contact form button:hover {
+  background-color: var(--gray-accent);
+  color: white;
   cursor: pointer;
 }
 

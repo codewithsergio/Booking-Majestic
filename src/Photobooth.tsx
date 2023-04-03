@@ -18,6 +18,7 @@ import enclosed from "./assets/images/enclosed.webp";
 import layout2x6 from "./assets/images/layout2x6.webp";
 import layout4x6 from "./assets/images/layout4x6.webp";
 import HorizontalLine from "./reusable/HorizontalLine";
+import { NavLink } from "react-router-dom";
 
 function Photobooth() {
   return (
@@ -69,7 +70,9 @@ function Photobooth() {
           </div>
         </div>
       </div>
-      <button>BOOK A PHOTO BOOTH</button>
+      <NavLink id="lets_start" to="../contact">
+        BOOK A PHOTO BOOTH
+      </NavLink>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import "./GeneralContact.css";
 import fancy_curl from "./assets/fancy_curl.webp";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import HorizontalLine from "./reusable/HorizontalLine";
@@ -28,7 +28,7 @@ function GeneralContact() {
     setUserEvent("");
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
     if (form.current == null) {
@@ -147,7 +147,7 @@ function GeneralContact() {
           name="message"
           placeholder="Event Information"
         />
-        <button type="submit">Send</button>
+        <button type="submit">SUBMIT</button>
       </form>
     </div>
   );

@@ -7,6 +7,8 @@ import canada from "./assets/canada.webp";
 import banquet from "./assets/banquet.webp";
 import radisson from "./assets/radisson.webp";
 import chase from "./assets/chase.png";
+import tipsy from "./assets/tipsy.png";
+import wines from "./assets/wines.png";
 import fancy_curl from "./assets/fancy_curl.webp";
 
 function Clients() {
@@ -18,10 +20,10 @@ function Clients() {
       <div className="trusted_icons">
         <img src={ASC} />
         <img src={hilton} />
-        <img src={zimmer} />
+        <img src={tipsy} />
         <img src={ritz} />
         <img src={canada} />
-        <img src={chase} />
+        <img src={wines} />
         <img src={banquet} />
         <img src={radisson} />
       </div>

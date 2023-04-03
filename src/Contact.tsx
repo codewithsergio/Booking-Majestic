@@ -4,6 +4,7 @@ import { useState } from "react";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import HorizontalLine from "./reusable/HorizontalLine";
+import { FormEvent } from "react";
 
 interface AppProps {
   service: string;
@@ -24,7 +25,7 @@ function Contact({ service }: AppProps) {
     setUserEvent("");
   };
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: FormEvent) => {
     e.preventDefault();
 
     if (form.current == null) {
@@ -98,7 +99,7 @@ function Contact({ service }: AppProps) {
           name="message"
           placeholder="Event Information"
         />
-        <button type="submit">Send</button>
+        <button type="submit">SUBMIT</button>
       </form>
     </div>
   );

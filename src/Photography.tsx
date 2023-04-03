@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import fancy_curl from "./assets/fancy_curl.webp";
 import ring1 from "./assets/images/ring1.webp";
 import steph1 from "./assets/images/steph1.webp";
@@ -34,7 +35,9 @@ function Photography() {
         Basic photography packages start at $500 click here to contact us for a
         free consultation!
       </p>
-      <button>BOOK A PHOTOGRAPHER</button>
+      <NavLink id="lets_start" to="../contact">
+        BOOK A PHOTOGRAPHER
+      </NavLink>
     </div>
   );
 }

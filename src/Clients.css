@@ -24,9 +24,9 @@
 
 .trusted_icons {
   display: grid;
-  grid-template-columns: 150px 150px 150px 150px;
-  grid-template-rows: 150px;
-  grid-column-gap: 50px;
+  grid-template-columns: 120px 120px 120px 120px;
+  grid-template-rows: 150px 150px;
+  grid-column-gap: 100px;
 }
 
 .trusted_icons img {
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 870px) {
   .trusted_icons {
-    grid-template-columns: 90px 90px 90px 90px;
-    grid-gap: 7px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 15px;
   }
 }

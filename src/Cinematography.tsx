@@ -8,6 +8,7 @@ import drone1ss from "./assets/images/drone1ss.png";
 import tree1ss from "./assets/images/tree1ss.png";
 import shadowback from "./assets/shadow-back.png";
 import dance1ss from "./assets/images/dance1ss.png";
+import { NavLink } from "react-router-dom";
 
 function Cinematography() {
   return (
@@ -39,7 +40,9 @@ function Cinematography() {
           <img src={drone1ss} />
         </a>
       </div>
-      <button>BOOK A CINEMATOGRAPHER</button>
+      <NavLink id="lets_start" to="../contact">
+        BOOK A CINEMATOGRAPHER
+      </NavLink>
     </div>
   );
 }

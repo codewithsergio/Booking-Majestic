@@ -37,7 +37,7 @@
   border-radius: 1rem;
 }
 
-.dj a:hover::before {
+.dj .imgGroup a:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -79,9 +79,9 @@
   letter-spacing: -0.01rem;
 }
 
-.dj button {
+.dj #lets_start {
   background-color: var(--yellow-accent);
-  color: white;
+  color: var(--gray-accent);
   border: none;
   font-weight: 700;
   letter-spacing: 0.2rem;
@@ -92,8 +92,9 @@
   transition: background-color 0.4s;
 }
 
-.dj button:hover {
-  background-color: var(--faded-yellow);
+.dj #lets_start:hover {
+  background-color: var(--gray-accent);
+  color: white;
   cursor: pointer;
 }
 

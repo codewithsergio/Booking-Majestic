@@ -16,7 +16,7 @@ function NavBar() {
           <NavLink to="/">
             <img id="logo" src={MajesticLogo} alt="majestic logo" />
           </NavLink>
-          <p className="nav_call">CALL NOW: 323.392.8077</p>
+          <p className="nav_call">CALL NOW: 714.864.6128</p>
         </div>
         <div id="contact_ham">
           <a></a>

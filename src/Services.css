@@ -34,7 +34,7 @@
 }
 
 .professional_services > #lets_start:hover {
-  background-color: var(--faded-yellow);
+  background-color: var(--gray-accent);
   cursor: pointer;
 }
 
