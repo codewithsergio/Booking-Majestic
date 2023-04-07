@@ -11,6 +11,10 @@ body {
   margin-top: 6.7rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 870px) {
   body {
     margin-top: 10.2rem;
