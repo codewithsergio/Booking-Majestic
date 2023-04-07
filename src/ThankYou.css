@@ -1,0 +1,44 @@
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-accent);
+  padding: 5rem 0 5rem 0;
+}
+
+.thankyou .iconify {
+  font-size: 6rem;
+  /* color: var(--yellow-accent); */
+  color: var(--brown);
+  margin-bottom: 2rem;
+}
+
+.thankyou svg {
+  /* filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4)); */
+}
+
+.thankyou h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.thankyou h4 {
+  color: gray;
+  font-style: italic;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 870px) {
+  .thankyou h1 {
+    font-size: 1.5rem;
+  }
+
+  .thankyou h3 {
+    font-size: 1rem;
+  }
+
+  .thankyou h4 {
+    font-size: 0.8rem;
+  }
+}

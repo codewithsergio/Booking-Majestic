@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 870px) {
   .trusted_icons {
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: 75px 75px 75px 75px;
     grid-gap: 15px;
   }
 }

@@ -42,7 +42,7 @@ form textarea {
   color: lightgray;
 }
 
-.contact form button {
+.contact form #submit_link {
   position: relative;
   bottom: 50px;
   background-color: var(--yellow-accent);
@@ -59,7 +59,7 @@ form textarea {
   width: 100px;
 }
 
-.contact form button:hover {
+.contact form #submit_link:hover {
   background-color: var(--gray-accent);
   color: white;
   cursor: pointer;

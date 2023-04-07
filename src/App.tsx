@@ -15,6 +15,7 @@ import Cinematography from "./Cinematography";
 import Photobooth from "./Photobooth";
 import Dj from "./Dj";
 import GeneralContact from "./GeneralContact";
+import ThankYou from "./ThankYou";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -69,6 +70,14 @@ const router = createBrowserRouter(
         element={
           <>
             <GeneralContact />
+          </>
+        }
+      />
+      <Route
+        path="/thankyou"
+        element={
+          <>
+            <ThankYou />
           </>
         }
       />

@@ -5,6 +5,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import HorizontalLine from "./reusable/HorizontalLine";
 import { FormEvent } from "react";
+import { NavLink, Navigate } from "react-router-dom";
 
 interface AppProps {
   service: string;
@@ -15,6 +16,7 @@ function Contact({ service }: AppProps) {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [userEvent, setUserEvent] = useState("");
+  const [formFinished, setFormFinished] = useState("False");
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -27,12 +29,14 @@ function Contact({ service }: AppProps) {
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
-
     if (form.current == null) {
       return;
     }
+    if (userName.length < 3) {
+      alert("Please make sure to include your full name.");
+      return;
+    }
     if (
-      userName.length < 3 ||
       !String(email)
         .toLowerCase()
         .match(
@@ -63,6 +67,7 @@ function Contact({ service }: AppProps) {
         }
       );
     clearForm();
+    setFormFinished("True");
   };
 
   return (
@@ -99,8 +104,11 @@ function Contact({ service }: AppProps) {
           name="message"
           placeholder="Event Information"
         />
-        <button type="submit">SUBMIT</button>
+        <NavLink id="submit_link" to="/thankyou" onClick={sendEmail}>
+          SUBMIT
+        </NavLink>
       </form>
+      {formFinished === "True" && <Navigate to="/thankyou" />}
     </div>
   );
 }

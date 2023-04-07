@@ -62,7 +62,7 @@ form textarea {
   color: lightgray;
 }
 
-.generalContact form button {
+.generalContact form #submit_link {
   position: relative;
   bottom: 50px;
   background-color: var(--yellow-accent);
@@ -79,7 +79,7 @@ form textarea {
   width: 100px;
 }
 
-.generalContact form button:hover {
+.generalContact form #submit_link:hover {
   background-color: var(--gray-accent);
   color: white;
   cursor: pointer;
@@ -108,7 +108,7 @@ form textarea {
   form {
     width: 90%;
   }
-  form button {
+  form #submit_link {
     margin-bottom: 1rem;
   }
 }
