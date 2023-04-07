@@ -103,7 +103,7 @@ a:hover {
   color: var(--ugly-brown);
 }
 
-a.active {
+li a.active {
   background-color: transparent;
   color: var(--yellow-accent);
   background-color: rgba(200, 200, 200, 0.1);
@@ -113,6 +113,9 @@ a.active {
 }
 
 @media screen and (max-width: 870px) {
+  li a.active {
+    background-color: transparent;
+  }
   .logo_call {
     display: flex;
     flex-direction: column;

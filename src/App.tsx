@@ -1,11 +1,5 @@
 import "./App.css";
-import {
-  createBrowserRouter,
-  Routes,
-  Route,
-  Link,
-  NavLink,
-} from "react-router-dom";
+import { createBrowserRouter, Route } from "react-router-dom";
 import { createRoutesFromElements, RouterProvider } from "react-router";
 
 // Pages

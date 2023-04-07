@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import Clients from "./Clients";
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./RootLayout.css";
 import ScrollToTop from "./reusable/ScrollToTop";
 
