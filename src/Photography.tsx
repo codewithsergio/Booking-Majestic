@@ -27,7 +27,6 @@ function Photography() {
         <img src={ring1} />
         <img src={table1} />
       </div>
-      <div></div>
       <p>
         Majestic Photography can accommodate virtually any budget, from simple
         and casual to elegant and extravagant. We have been documenting weddings

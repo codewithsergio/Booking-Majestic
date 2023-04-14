@@ -43,13 +43,17 @@
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(3, 1fr);
-  width: 900px;
 }
 
 .grid3by3 img {
-  width: 100%;
+  width: 18rem;
   height: 100%;
   object-fit: cover;
+}
+
+.photography p {
+  position: relative;
+  top: 0;
 }
 
 .photography > img {
@@ -61,7 +65,9 @@
   .grid3by3 {
     gap: 5px;
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+  }
+  .grid3by3 img {
+    width: 11rem;
   }
   .photography > img {
     width: 125px;
@@ -81,7 +87,6 @@
   .grid3by3 {
     gap: 5px;
     grid-template-columns: repeat(2, 1fr);
-    width: 600px;
   }
   .photography > img {
     width: 125px;
